@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <title>AJAX You Tube API</title>
+        <script
+          src="https://code.jquery.com/jquery-3.2.1.min.js"
+          integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+          crossorigin="anonymous"></script>
+        <link href="index.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h1>Search movies by name on You Tube</h1>
+          <form action="#" class="js-search-form">
+            <label for="query" aria-label="query">
+            <input type="text" class="js-query"></label>
+             <button type="submit">Search</button>
+          </form>
+          
+          <!-- <h2>Results</h2> -->
+          <div class="js-search-results" aria-live="assertive">
+            
+          </div>
+          <!-- aria-live tells the screen reader to watch this part of the DOM
+        for changes. We add `hidden` so that users won't be confused 
+        by the presence of an empty element.-->
+        <main role="main" class="js-output" aria-live="assertive" hidden>
+          <!--our results will go here!-->
+        
+      </main>
+      <script src="https://code.jquery.com/jquery-2.2.4.js"></script>
+      <script src="index.js"></script>
+    </body>
+</html>
